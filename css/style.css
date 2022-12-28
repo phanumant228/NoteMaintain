@@ -1,0 +1,301 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #b95af0;
+  font-family: 'Kalam', cursive;
+}
+img{
+  width: 300px;
+  height: 200px;
+  padding-top: 30px;
+  position: relative;
+}
+.main-heading{
+  text-align: center;
+  color: black;
+  margin: 0;
+  padding: 15px 0;
+  background-color: #d836c2;
+}
+.card-title{
+  font-size: 1.25rem;
+  margin: 0;
+  padding-bottom: 10px;
+  color: white
+}
+.form-control{
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  resize: none;
+  font-size: 1.125rem;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.6px;
+}
+.form-group{
+  text-align: center;
+
+}
+.add-btn{
+  background-color: #FEF5AC;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  font-weight: 600;
+  position: relative;
+  right: -50%;
+  transform: translateY(-50%);
+
+}
+
+.add-btn:hover{
+  background-color: #CCB62E;
+  border: 1px solid black;
+}
+.edit-btn{
+  background-color: #70CC14;
+  color: white;
+
+}
+.edit-btn:hover{
+  background-color: #57a608;
+  color: white;
+}
+.card{
+  padding: 0 60px;
+  text-align: center;
+}
+.image{
+  width: 50%;
+  text-align: center;
+}
+.notes-section{
+  padding: 0 60px;
+  font-size: 2rem;
+  color: black;
+  margin: 0;
+  background-image: linear-gradient(to right ,#FEF5AC, #c4ddfc);
+}
+.search{
+  padding: 10px 60px;
+}
+.search label{
+  color: white;
+}
+.search input{
+  outline: none;
+}
+.notes{
+  padding: 0 60px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.catd-title{
+  font-size: 1.3rem;
+  margin:0;
+  display: inline-block;
+}
+.card-text{
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.6px;
+}
+.textarea{
+  width: 30%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.empty{
+  font-size: 2rem;
+  margin: 15px 0;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+}
+.noteCard{
+  padding: 10px 10px;
+  max-width: 250px;
+  min-width: 250px;
+  display: inline-block;
+  vertical-align:top;
+}
+.card-deck{
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 3px 3px #3F3D56;
+  position: relative;
+}
+.card-deck1{
+    background-color: #DBE2EF;
+}
+.card-deck2{
+  background-color: #FFEA8F;
+}
+.delete{
+  padding: 5px 7px;
+  background-color: #E71414;
+  color: white;
+  border: 1px solid #E71414;
+  font-size: 1rem;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+.delete:hover{
+  background-color: #A80A0A;
+}
+.edit{
+  padding: 5px 7px;
+  background-color: white;
+  color: #70CC14;
+  border: 1px solid #70CC14;
+  font-size: 1rem;
+  border-radius: 100%;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  transform: translateX(-100%);
+  transition: right 0.5s;
+}
+.edit:hover{
+  color: white;
+  background-color: #70CC14;
+}
+.important:active{
+  background-color: #A80A0A;
+}
+hr{
+  margin: 0 0 3px 0;
+  border-left: 0;
+  border-right: 0;
+}
+.mycheckbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mycheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transform: translateY(-50%);
+  background-color: #11D9FF;
+  border-radius: 50%;
+}
+.mycheckbox:hover input ~ .checkmark {
+  background-color: #00D7D3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.mycheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.mycheckbox .checkmark:after {
+  left: 5px;
+  top: 2.5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media only screen and (max-width: 720px){
+  .card{
+    padding: 0;
+  }
+  .card-title{
+    font-size: 1.6rem;
+  }
+  .notes{
+    justify-content: space-around;
+  }
+  .textarea {
+    width: 50%;
+  }
+  .form-control{
+    height: 150px;
+  }
+  .noteCard{
+    min-width: 220px;
+  }
+}
+@media only screen and (max-width: 420px) {
+
+
+    .form-control{
+      height: 90px;
+    }
+    .main-heading{
+      padding: 8px 0;
+    }
+    .card{
+      padding: 0;
+    }
+    .add-btn{
+      padding: 5px 12px;
+      top: -5px;
+    }
+    .card-title{
+      font-size: 1rem;
+    }
+    .empty{
+      font-size: 1.5rem;
+    }
+    .notes-section{
+      font-size: 1.5rem;
+      padding: 0 35px;
+    }
+    .search{
+      padding: 10px 35px;
+    }
+    .notes{
+      padding: 0 35px;
+    }
+    .catd-title{
+      font-size: 1.1rem;
+    }
+    .card-text{
+      font-size: 0.8rem;
+    }
+    .edit ,.delete{
+      font-size: 0.8rem;
+      padding: 3px 4.5px;
+    }
+
+}
